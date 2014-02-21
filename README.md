@@ -1,7 +1,7 @@
 Responsive Web Design 2.0 Demo
 ==========
 
-![http://jsallthethings.com/dev/rwd20-demo/](http://jsallthethings.com/dev/rwd20-demo/) 
+[http://jsallthethings.com/dev/rwd20-demo/](http://jsallthethings.com/dev/rwd20-demo/) 
 
 Demo showing off the concept of [RWD20](https://github.com/mordendk/rwd20). Scale the window from phone over tablet to desktop size and see elements created and resources loaded dynamically.
 
