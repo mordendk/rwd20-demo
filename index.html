@@ -19,7 +19,7 @@
 	<!-- Favicons: http://cbrac.co/11ZzQkJ -->
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/site.css">
+	<link rel="stylesheet" href="/dev/rwd20-demo/css/site.css">
 
 </head>
 
@@ -41,20 +41,20 @@
 			<div class="grid">
 				<div class="grid-item medium-one-whole large-two-thirds">
 					<div class="small-hide" responsive-breakpoint="'medium,large'">
-						<canvas id="rotatingGlobe" width="350" height="350" style="cursor: move;" class="planet-canvas" planet="/json/planet.json"></canvas>
+						<canvas id="rotatingGlobe" width="350" height="350" style="cursor: move;" class="planet-canvas" planet="/dev/rwd20-demo/json/planet.json"></canvas>
 					</div>
-					<img class="medium-hide large-hide planet-image" responsive-breakpoint="'small'" ng-src="/images/planet.png" />
+					<img class="medium-hide large-hide planet-image" responsive-breakpoint="'small'" ng-src="/dev/rwd20-demo/images/planet.png" />
 					<div class="grid grid-gutter-half">
 						<div class="grid-item medium-one-half">
-							<div class="island">ALLE</div>
+							<div class="island">CONTENT</div>
 						</div>
 						<div class="grid-item medium-one-half">
-							<div class="island">ALLE</div>
+							<div class="island">CONTENT</div>
 						</div>
 					</div>
 				</div>
 				<div class="grid-item large-one-third">
-					<section class="small-hide medium-hide" responsive-breakpoint="'large'" model="/json/news.json" ng-include="'/partials/news.html'"></section>
+					<section class="small-hide medium-hide" responsive-breakpoint="'large'" model="/dev/rwd20-demo/json/news.json" ng-include="'/dev/rwd20-demo/partials/news.html'"></section>
 				</div>
 			</div>
 		</div>
@@ -70,15 +70,15 @@
 	-->
 
 	<!-- Scripts -->
-	<script src="/js/vendor/rwd20.js"></script>
-	<script src="/js/site.js"></script>
+	<script src="/dev/rwd20-demo/js/vendor/rwd20.js"></script>
+	<script src="/dev/rwd20-demo/js/site.js"></script>
 
-	<script src="/js/services/d3.js"></script>
-	<script src="/js/services/topojson.js"></script>
-	<script src="/js/services/planetary.js"></script>
+	<script src="/dev/rwd20-demo/js/services/d3.js"></script>
+	<script src="/dev/rwd20-demo/js/services/topojson.js"></script>
+	<script src="/dev/rwd20-demo/js/services/planetary.js"></script>
 
-	<script src="/js/directives/model.js"></script>
-	<script src="/js/directives/planet.js"></script>
+	<script src="/dev/rwd20-demo/js/directives/model.js"></script>
+	<script src="/dev/rwd20-demo/js/directives/planet.js"></script>
 
 </body>
 </html>

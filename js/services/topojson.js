@@ -22,7 +22,7 @@
 
 						scriptTag.type = 'text/javascript';
 						scriptTag.async = true;
-						scriptTag.src = '/js/vendor/topojson.js';
+						scriptTag.src = '/dev/rwd20-demo/js/vendor/topojson.js';
 						scriptTag.onreadystatechange = function () {
 							if (this.readyState === 'complete') {
 								onScriptLoad();
