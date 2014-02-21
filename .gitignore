@@ -1,0 +1,7 @@
+#WEBSTORM
+.idea/
+
+#ASP.NET
+aspnet_client/
+*.config
+

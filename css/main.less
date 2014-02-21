@@ -1,0 +1,63 @@
+/* ================================================================== *\
+   Main ($main)
+\* ================================================================== */
+
+
+.logo{
+	margin-bottom: 0;
+}
+.page{
+	max-width: 1160px;
+	padding:1rem;
+	margin:0 auto;
+}
+
+.header{
+	margin-bottom: 1rem;
+}
+.main-nav{
+
+	.button{
+		margin-bottom: 1px;
+	}
+
+}
+
+.grid-gutter-nav              { margin-left: -1px; }
+.grid-gutter-nav .grid-item   { padding-left: 1px; }
+
+.planet-canvas{
+	width: 50%;
+	margin: 1rem auto;
+	display: block;
+
+}
+.planet-image{
+	margin: 0 auto 1rem auto;
+	width: 50%;
+	display: block;
+}
+
+
+// show/hide breakpoints
+
+.small-hide{
+	visibility: hidden;
+	display: none;
+}
+
+
+@media (max-width: 960px) and (min-width: 600px){
+	.small-hide    { visibility: visible; display: block; }
+	.medium-hide    { visibility: hidden; display: none; }
+}
+
+
+/* Large-sized breakpoint */
+@media (min-width: 960px) {
+	.small-hide { visibility: visible; display: block; }
+	.large-hide {
+		visibility: hidden;
+		display: none;
+	}
+}

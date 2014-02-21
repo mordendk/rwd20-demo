@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html ng-app="site" class="lt_ie9"> <![endif]-->
+<!--[if IE 9]> <html ng-app="site" class="lt_ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html ng-app="site"> <!--<![endif]-->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="ClearType" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- DNS prefetch -->
+	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+	<!-- Title, desc -->
+	<title>RWD20</title>
+	<meta name="description" content="">
+
+	<!-- Favicons: http://cbrac.co/11ZzQkJ -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/site.css">
+
+</head>
+
+<body>
+	<div class="page">
+		<header class="header">
+			<h2 class="logo"><span class="button button-primary button-mini float-right medium-hide large-hide" ng-click="navToggle=!navToggle">≡</span>RWD20</h2>
+			<nav class="main-nav small-hide" ng-class="{'small-hide':!navToggle}">
+				<ul class="grid grid-gutter-nav">
+					<li class="grid-item medium-one-fifth"><a class="button button-small button-primary one-whole">Home</a></li>
+					<li class="grid-item medium-one-fifth"><a class="button button-small button-primary one-whole">Catalog</a></li>
+					<li class="grid-item medium-one-fifth"><a class="button button-small button-primary one-whole"> Inspiration</a></li>
+					<li class="grid-item medium-one-fifth"><a class="button button-small button-primary one-whole">Contact</a></li>
+					<li class="grid-item medium-one-fifth"><a class="button button-small button-primary one-whole">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main">
+			<div class="grid">
+				<div class="grid-item medium-one-whole large-two-thirds">
+					<div class="small-hide" responsive-breakpoint="'medium,large'">
+						<canvas id="rotatingGlobe" width="350" height="350" style="cursor: move;" class="planet-canvas" planet="/json/planet.json"></canvas>
+					</div>
+					<img class="medium-hide large-hide planet-image" responsive-breakpoint="'small'" ng-src="/images/planet.png" />
+					<div class="grid grid-gutter-half">
+						<div class="grid-item medium-one-half">
+							<div class="island">ALLE</div>
+						</div>
+						<div class="grid-item medium-one-half">
+							<div class="island">ALLE</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item large-one-third">
+					<section class="small-hide medium-hide" responsive-breakpoint="'large'" model="/json/news.json" ng-include="'/partials/news.html'"></section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- AngularJS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-touch.js"></script>
+	<!--
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-animate.js"></script>
+	-->
+
+	<!-- Scripts -->
+	<script src="/js/vendor/rwd20.js"></script>
+	<script src="/js/site.js"></script>
+
+	<script src="/js/services/d3.js"></script>
+	<script src="/js/services/topojson.js"></script>
+	<script src="/js/services/planetary.js"></script>
+
+	<script src="/js/directives/model.js"></script>
+	<script src="/js/directives/planet.js"></script>
+
+</body>
+</html>

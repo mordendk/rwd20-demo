@@ -1,0 +1,22 @@
+[
+	{
+		"title": "News title 1",
+		"image": "http://lorempixel.com/325/125/sports/1/",
+		"description": "Nostrud culpa non nulla sunt aliqua. Aliquip anim sunt deserunt consectetur nulla consectetur do ullamco sint esse ex fugiat."
+	},
+	{
+		"title": "News title 2",
+		"image": "http://lorempixel.com/325/125/sports/2/",
+		"description": "Nostrud culpa non nulla sunt aliqua. Aliquip anim sunt deserunt consectetur nulla consectetur do ullamco sint esse ex fugiat."
+	},
+	{
+		"title": "News title 3",
+		"image": "http://lorempixel.com/325/125/sports/3/",
+		"description": "Nostrud culpa non nulla sunt aliqua. Aliquip anim sunt deserunt consectetur nulla consectetur do ullamco sint esse ex fugiat."
+	},
+	{
+		"title": "News title 4",
+		"image": "http://lorempixel.com/325/125/sports/4/",
+		"description": "Nostrud culpa non nulla sunt aliqua. Aliquip anim sunt deserunt consectetur nulla consectetur do ullamco sint esse ex fugiat."
+	}
+]
