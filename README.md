@@ -17,6 +17,12 @@ Key point for this demo
 ```
 
 
+What’s wrong with traditional RWD?
+----------------------------------
+We use CSS and Media Queries to scale, move and show/hide elements, and visually it gets the job done. But all the elements are still active, taking their toll on bandwidth/performance whether or not they’re actually needed. This flawed (now you see me, now you don’t) perception of reality mimics that of an ostrich trying to hide itself by putting its head in the ground.
+
+
+
 What do we want to achieve?
 ------------------------------
 We want to be able to build truly responsive user interfaces, without letting content and functionality targeting a specific screen size, affect the performance of another - no matter how rich it is.
