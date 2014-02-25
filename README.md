@@ -6,6 +6,17 @@ Responsive Web Design 2.0 Demo
 Demo showing off the concept of [RWD20](https://github.com/mordendk/rwd20). Scale the window from phone over tablet to desktop size and see elements created and resources loaded dynamically.
 
 
+Key point for this demo
+-----------------------
+ Is showing off the responsive-breakpoint directive in combination with others to create self contained components attached to breakpoints - ie.:
+
+```html
+<section class="related-column" responsive-breakpoint="'large'" model="/json/news.json" ng-include="'/partials/news.html'">
+	<!-- Element only initialized when 960 < window.innerWidth <= 1600 -->
+</section>
+```
+
+
 What do we want to achieve?
 ------------------------------
 We want to be able to build truly responsive user interfaces, without letting content and functionality targeting a specific screen size, affect the performance of another - no matter how rich it is.
